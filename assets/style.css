@@ -19,7 +19,7 @@ body{
 }
 .item:nth-child(1) h1{
     margin: 0;
-    margin-left: 100px;
+    
     font-family: "Zalando Sans Expanded", sans-serif;
    text-align: start;
    font-weight: 400;
@@ -31,6 +31,18 @@ body{
   height: 75%;
  
 }
+.item:nth-child(2) img {
+width: 70%;
+height:375px;
+margin-left: 40px;
+}
+.item:nth-child(2) h3{
+    margin-top: 0;
+    margin-left: 40px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 300;
+}
+
 
 /* Main */
 .item:nth-child(3) {
