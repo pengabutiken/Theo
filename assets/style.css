@@ -87,6 +87,8 @@ height:375px;
   font-family:"Zalando Sans Expanded", sans-serif ;
   color: white;
   text-align: center;
+  bottom: 0;
+  position: fiexed;
 
   
 }
