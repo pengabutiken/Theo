@@ -25,6 +25,21 @@ body{
     font-family: "Zalando Sans Expanded", sans-serif;
    text-align: start;
    font-weight: 400;
+   width: 40%;
+   
+}
+.item:nth-child(1) h2{
+    text-align: end;
+     font-weight: 400;
+     font-family: "Zalando Sans Expanded", sans-serif;
+      margin-top: 0;
+      
+}
+.item:nth-child(1) a{
+    text-decoration: none;
+}
+.item:nth-child(1) a:hover{
+    color:blue;
 }
 
 /* Sidebar */
