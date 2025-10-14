@@ -1,4 +1,28 @@
 
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 200px;                
+  background: #6449bd;       
+  opacity: 0.5;            
+  pointer-events: none;
+  z-index: 0;                
+}
+
+
+body::before { right: 3%; } 
+body::after  { right: 33%; }  
+
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+
 body{
     margin: 0;
 }
