@@ -1,0 +1,1 @@
+This is a personal portfolio website made with HTML and CSS. It includes short information about me, my interests, studies, and skills. The layout uses Flexbox, and media queries make it work on different screen sizes. Google Fonts is used for text, and Devicon icons show the programming languages and tools I work with.
