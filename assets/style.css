@@ -1,30 +1,9 @@
-body::before,
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 200px;
-  background: #6449bd;
-  opacity: 0.5;
-  pointer-events: none;
-  z-index: 0;
-}
 
-body::before {
-  right: 3%;
-}
-body::after {
-  right: 33%;
-}
 
-.container {
-  position: relative;
-  z-index: 1;
-}
 
-body {
-  margin: 0;
+
+body{
+    margin: 0;
 }
 .container {
   display: flex;
@@ -35,232 +14,240 @@ body {
 }
 /*  header */
 
-.item:nth-child(1) {
+.item:nth-child(1){ 
   margin-top: 0;
-  width: 100%;
+    width: 100%;
   height: 5%;
-
-  text-align: center;
+  
+  text-align:center;
+  
 }
-.item:nth-child(1) h1 {
-  margin-left: 10px;
-  margin-top: 0;
-  font-family: "Zalando Sans Expanded", sans-serif;
-  text-align: start;
-  font-weight: 400;
-  width: 40%;
+.item:nth-child(1) h1{
+    margin-left: 10px;
+    margin-top: 0;
+    font-family: "Zalando Sans Expanded", sans-serif;
+   text-align: start;
+   font-weight: 400;
+   width: 40%;
+   
 }
-.item:nth-child(1) h2 {
-  text-align: end;
-  font-weight: 400;
-  font-family: "Zalando Sans Expanded", sans-serif;
-  margin-top: 0;
+.item:nth-child(1) h2{
+    text-align: end;
+     font-weight: 400;
+     font-family: "Zalando Sans Expanded", sans-serif;
+      margin-top: 0;
+      
 }
-.item:nth-child(1) a {
-  text-decoration: none;
+.item:nth-child(1) a{
+    text-decoration: none;
+    color: black;
 }
-.item:nth-child(1) a:hover {
-  color: blue;
+.item:nth-child(1) a:hover{
+    color:black;
+}
+.item:nth-child(1) a:active{
+    color:black ;
+}
+.item:nth-child(1) a:visited{
+    color: black;
 }
 
 /* Sidebar */
 .item:nth-child(2) {
   width: 25%;
+  padding-bottom: 40px;
+  
+ 
 }
 .item:nth-child(2) img {
-  width: 70%;
-  height: 375px;
-}
-.item:nth-child(2) h3 {
-  margin-top: 0;
+width: 70%;
+height:375px;
 
-  font-family: "Zalando Sans Expanded", sans-serif;
-  font-weight: 300;
-  margin-bottom: 5px;
 }
-.lista1 {
-  margin-top: 0;
-  font-family: "Zalando Sans Expanded", sans-serif;
-  font-weight: 100;
-
-  list-style-type: circle;
-  width: 60%;
+.item:nth-child(2) h3{
+    margin-top: 0;
+    
+    font-family: "Zalando Sans Expanded", sans-serif;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.lista1{
+    margin-top: 0;
+    font-family:"Zalando Sans Expanded", sans-serif ;
+    font-weight: 100;
+    
+    list-style-type:circle;
+    width: 60%;
 }
 
 /* Main */
 .item:nth-child(3) {
   flex-grow: 1;
-
+  
   font-weight: 200;
-  font-family: "Zalando Sans Expanded", sans-serif;
+  font-family:"Zalando Sans Expanded", sans-serif ;
   margin-left: 0;
   width: 0%;
+
 }
 /* Footer  */
-.item:nth-child(4) {
-  width: 100%;
-  height: 5%;
+.item:nth-child(4){
+     width: 100%;
+  height: 7%;
   background-color: black;
-  font-family: "Zalando Sans Expanded", sans-serif;
+  font-family:"Zalando Sans Expanded", sans-serif ;
   color: white;
   text-align: center;
   bottom: 0;
-  position: fixed;
+  position: none;
+  
+
+  
 }
-li {
-  font-weight: 500;
+li{
+    font-weight: 500;
 }
-.lang {
-  font-size: 40px;
+.lang{
+    font-size: 40px;
 }
-.linkedin {
-  text-decoration: none;
+.linkedin{
+ text-decoration: none;
+ color:black;
+ 
+}
+.linkedin:hover{
+    color:black;
+}
+.linkedin:visited{
+    color:black;
+}
+a:active{
+    color: black;
 }
 @media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .item:nth-child(1) {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .item:nth-child(1) h1 {
-    font-size: 1.5em;
-    margin-left: 0;
-    text-align: center;
-    line-height: 1.2;
-  }
-
-  .item:nth-child(2) {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .item:nth-child(2) img {
-    width: 80%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .item:nth-child(2) h3 {
-    text-align: center;
-    font-size: 1.2em;
-    margin: 15px 0 10px 0;
-  }
-
-  .lista1 {
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
-    font-size: 0.9em;
-  }
-
-  .item:nth-child(3) {
-    width: 100%;
-    margin-left: 0;
-    padding: 0 10px;
-  }
-
-  .intro h4 {
-    font-size: 1.1em;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  .intro p {
-    font-size: 0.9em;
-    line-height: 1.5;
-    margin-bottom: 15px;
-  }
-
-  .lang {
-    font-size: 30px;
-    text-align: center;
-    line-height: 1.5;
-    margin: 15px 0;
-  }
-
-  .lang i {
-    margin: 5px;
-  }
-
-  /* Footer adjustments */
-  .item:nth-child(4) {
-    width: 100%;
-    padding: 15px 0;
-    margin-top: 20px;
-  }
-
-  .item:nth-child(4) p {
-    margin: 0;
-    font-size: 0.9em;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 5px;
-  }
-
-  .item:nth-child(1) h1 {
-    font-size: 1.3em;
-  }
-
-  .item:nth-child(2) img {
-    width: 90%;
-  }
-
-  .lista1 {
-    font-size: 0.8em;
-    padding-left: 15px;
-  }
-
-  .intro p {
-    font-size: 0.8em;
-  }
-
-  .lang {
-    font-size: 25px;
-  }
-
-  .lang i {
-    margin: 3px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 3%;
-  }
-
-  .item:nth-child(2) {
-    width: 20%;
-  }
-
-  .item:nth-child(3) {
-    width: 75%;
-  }
-
-  body::before,
-  body::after {
-    width: 250px;
-    opacity: 0.4;
-  }
-
-  .item:nth-child(1) h1 {
-    font-size: 2.5em;
-  }
-
-  .item:nth-child(3) p {
-    font-size: 1.1em;
-    line-height: 1.6;
-  }
+            .container {
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+            
+            
+            .item:nth-child(1) {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+            
+            .item:nth-child(1) h1 {
+                font-size: 1.5em;
+                margin-left: 0;
+                text-align: center;
+                line-height: 1.2;
+            }
+            
+            
+            .item:nth-child(2) {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            
+            .item:nth-child(2) img {
+                width: 80%;
+                max-width: 300px;
+                height: auto;
+                border-radius: 10px;
+            }
+            
+            .item:nth-child(2) h3 {
+                text-align: center;
+                font-size: 1.2em;
+                margin: 15px 0 10px 0;
+            }
+            
+            .lista1 {
+                width: 100%;
+                text-align: left;
+                padding-left: 20px;
+                font-size: 0.9em;
+            }
+            
+            
+            .item:nth-child(3) {
+                width: 100%;
+                margin-left: 0;
+                padding: 0 10px;
+            }
+            
+            .intro h4 {
+                font-size: 1.1em;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            
+            .intro p {
+                font-size: 0.9em;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+            
+            
+            .lang {
+                font-size: 30px;
+                text-align: center;
+                line-height: 1.5;
+                margin: 15px 0;
+            }
+            
+            .lang i {
+                margin: 5px;
+            }
+            
+            
+            .item:nth-child(4) {
+                width: 100%;
+                padding: 15px 0;
+                margin-top: 20px;
+            }
+            
+            .item:nth-child(4) p {
+                margin: 0;
+                font-size: 0.9em;
+            }
+        }
+        
+        
+        @media screen and (max-width: 480px) {
+            .container {
+                padding: 5px;
+            }
+            
+            .item:nth-child(1) h1 {
+                font-size: 1.3em;
+            }
+            
+            .item:nth-child(2) img {
+                width: 90%;
+            }
+            
+            .lista1 {
+                font-size: 0.8em;
+                padding-left: 15px;
+            }
+            
+            .intro p {
+                font-size: 0.8em;
+            }
+            
+            .lang {
+                font-size: 25px;
+            }
+            
+            .lang i {
+                margin: 3px;
+            }}
+@media screen and (min-width: 1024px){
+    .item:nth-child(4) {
+        position: fixed;
+    }
 }
